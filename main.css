@@ -1,0 +1,80 @@
+:root{
+ --yellow: #e3d810;
+ --magenta: #d9138a;
+ --cyan: #12a4d9;
+ --black: #322e2f;
+ --lightBlack: #a29a9c;
+ --exLight: #f4f3f3;
+ --transition: all 0.4s ease-in-out;
+ --Heebo: 'Heebo', sans-serif;
+ --Roboto: 'Robot', sans-serif;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+font-family: var(--Heebo);
+line-height: 1.5;
+font-size: 1.05rem;
+text-rendering: optimizeLegibility;
+color: var(--black);
+}
+header{
+background: lineae-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6),url("backgroung.jpg") center/cover no-repeat fixed;
+color: #fff;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: stretch;
+}
+.header-top-info{
+background:var(--black);
+color: #fff;
+display: flex;
+flex-direction: column;
+text-align: center;
+padding: 0.6rem 0;
+}
+.header-top-info .row{
+margin: 0 auto;
+}
+.header-top-info .row div:first-child span{
+display: black;
+font-size: 1rem;
+margin-bottom: 0.5rem;
+}
+.header-top-info .row div:first-child span .fas{
+margin-right: 0.5rem;
+font-size: 0.9rem;
+}
+.header-top-info .btn{
+margin-right: 0.5rem;
+}
+
+.login-btn{
+background: var(--cyan);
+border-radius: 3rem;
+width: 120px;
+border: 2px solid var(--cyan)!important;
+color: #fff;
+transition: var(--transition);
+}
+.register-btn{
+background: transparent;
+border: 2px solid var(--cyan)!important;
+border-radius: 3rem;
+width: 120px;
+color: var(--cyan);
+transition: var(--transition);
+}
+.login-btn:hover{
+background: transparent;
+color: var(--cyan);
+}
+.register-btn:hover{
+background: var(--cyan);
+color:#fff;
+} 
